@@ -26,31 +26,31 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-16 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+    <section className="py-12 sm:py-16 bg-background">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="text-center mb-8 sm:mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3 sm:mb-4 px-4">
             What Our Reviewers Say
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
             Real experiences from product reviewers across the country
           </p>
         </div>
-        <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+        <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 max-w-5xl mx-auto">
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="border-border">
-              <CardContent className="pt-6">
-                <div className="mb-4">
-                  <Quote className="w-8 h-8 text-primary/40" />
+              <CardContent className="pt-5 sm:pt-6 px-4 sm:px-6">
+                <div className="mb-3 sm:mb-4">
+                  <Quote className="w-6 h-6 sm:w-8 sm:h-8 text-primary/40" />
                 </div>
-                <p className="text-muted-foreground mb-4 italic">
+                <p className="text-sm sm:text-base text-muted-foreground mb-3 sm:mb-4 italic">
                   "{testimonial.quote}"
                 </p>
-                <div className="border-t border-border pt-4">
-                  <p className="font-semibold text-foreground">
+                <div className="border-t border-border pt-3 sm:pt-4">
+                  <p className="text-sm sm:text-base font-semibold text-foreground">
                     {testimonial.name}
                   </p>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-xs sm:text-sm text-muted-foreground">
                     {testimonial.location}
                   </p>
                 </div>
